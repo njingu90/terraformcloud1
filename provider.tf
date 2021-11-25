@@ -10,6 +10,10 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = var.aws-region
-  profile = "kecy"
+  profile = var.user_profile
+  shared_credentials_file = var.shared_credentials_file
+  default_tags {
+    tags = var.tags
+  }
 }
 

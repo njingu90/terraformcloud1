@@ -16,3 +16,23 @@ variable "user_name" {
     default = "user-1" 
 }
 
+variable "user_profile" {
+    description = "users whcich profile youre using"
+    type = string
+    default = "kecy"
+  
+}
+
+variable "shared_credentials_file" {
+    description = "profile for user"
+    ttype = string
+    default = "C:/Users/njing/.aws/credentials"  
+}
+variable "tags" {
+  description = "tags for environments"
+  type = map(string)
+  default = {
+    application = "fintech-app"
+    environments = "testing"
+  }
+}
