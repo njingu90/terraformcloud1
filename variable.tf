@@ -25,7 +25,7 @@ variable "user_profile" {
 
 variable "shared_credentials_file" {
     description = "profile for user"
-    ttype = string
+    type = string
     default = "C:/Users/njing/.aws/credentials"  
 }
 variable "tags" {
